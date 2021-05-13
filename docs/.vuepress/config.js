@@ -1,4 +1,6 @@
 module.exports = {
+	permalink: "/:year/:month/:day/:slug",
+	// 统一配置永久链接
 	title: 'lyq的小小世界',
 	base:'/blog/',
 	description: '记录工作中的问题和学习',
