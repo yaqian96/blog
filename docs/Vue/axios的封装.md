@@ -2,7 +2,6 @@
 title: axios的封装
 date: 2020-08-12 18:55:30
 categories:
-  - 前端
   - vue
 tags:
   - axios

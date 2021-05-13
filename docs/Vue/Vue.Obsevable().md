@@ -3,7 +3,6 @@ title: Obsevable()方法简介
 date: 2020-08-11 10:55:30
 author: 'lyq'
 categories:
-  - 前端
   - vue
 tags: 
   - Vue.js
