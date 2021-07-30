@@ -12,7 +12,7 @@ tags:
   白屏时间 = firstPaint - performance.timing.navigationStart;
   首屏时间：首屏时间是指用户打开网站开始，到浏览器首屏内容渲染完成的时间。
 ## nuxt的配置信息
-```
+```js
 import config from './config'
 const Timestamp=new Date().getTime()
 export default {
@@ -171,7 +171,7 @@ process是node的全局变量，并且有env这个属性，process.env包含着�
 设置mode,webpack将会自动分配一些插件，其默认的是production。
 ## nuxt中注意的地方
 1. 
-```
+```js
 仅在客户端加载 js-cookie 包
 process.client 是Nuxt中特殊提供的数据
 运行在客户端为 true; 运行在服务端为 false
@@ -180,7 +180,7 @@ const Cookie = process.client ? require('js-cookie') : undefined
  Cookie.set('token', data.data)
 ```
 2. vuex中的配置
-```
+```js
 nuxtServerInit 是一个特殊的 action 方法
 这个 action 会在服务端渲染期间自动调用
 作用：初始化容器数据，传递数据给客户端使用
