@@ -132,6 +132,21 @@ export default {
     return {
       FORM_TYPE_ENUM,
       elFormRef: null,
+      formOptions: [
+        {
+          formType: FORM_TYPE_ENUM.INPUT,
+          prop: "input",
+          label: "输入框",
+          elProps: {
+            maxlength: 10,
+          },
+          elEvents: {
+            input: (val) => {
+              console.log("input-input:", val);
+            },
+          },
+        },
+      ],
     };
   },
   computed: {
