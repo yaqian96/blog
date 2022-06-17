@@ -231,6 +231,7 @@ export default {
         });
       }
     },
+    // 递归将列表转换成树结构
     listToTree(data = [], rootCode = []) {
       let map = {};
       data.forEach((item) => {
