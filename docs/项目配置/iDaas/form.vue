@@ -15,6 +15,10 @@
   >
     <slot>
       <template v-for="item in formOptions">
+        <!-- 在每一个item前边添加内容 -->
+        <template v-if="$slots[`${item.prop}ItemBefore`]">
+          <slot :name="`${item.prop}ItemBefore`"></slot>
+        </template>
         <ids-form-item
           v-if="item.visible !== false"
           :key="item.prop"
